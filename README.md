@@ -5,7 +5,7 @@ decision-making task, asking how reward, choice history and sensory evidence sha
 and trial-by-trial choices.
 
 Work completed during the Neuromatch Academy Computational Neuroscience course (July 2026)
-and extended afterwards.
+and posted afterwards(September 2026).
 
 ---
 
@@ -25,7 +25,7 @@ This repository asks three things of the publicly released behavioural data:
 Public IBL behavioural data, accessed via the [ONE API](https://int-brain-lab.github.io/ONE/)
 against the `openalyx.internationalbrainlab.org` database.
 
-- ~[N] subjects across [N] labs
+- 140 subjects across [N] labs
 - [N] training sessions
 - 418,082 trials in the GLM analysis
 
@@ -40,8 +40,8 @@ recovered rate constant `k` is used as a per-mouse learning rate.
 **Reward measures.** Two distinct quantities, which behave differently and should not be
 conflated:
 
-- *mean reward across all trials* — how much reward the mouse actually earned
-- *mean reward when rewarded* — the reward volume per correct trial, set by the experimenter
+- *mean reward across all trials* — average reward the mouse actually earned across trials
+- *mean reward when rewarded* — the reward volume per correct trial (consistent for one session)
 
 **Choice-history GLM.** Binomial GLM (logit link) predicting rightward choice from:
 
@@ -129,7 +129,7 @@ Behavioural data from the International Brain Laboratory. Please cite:
 > The International Brain Laboratory et al. (2021). Standardized and reproducible measurement
 > of decision-making in mice. *eLife* 10:e63711.
 
-Data portal: https://int-brain-lab.github.io/iblenv/notebooks_external/data_release_behavior.html
+Data portal: https://openalyx.internationalbrainlab.org
 
 Some loading and psychometric-curve code is adapted from IBL's public example notebooks and
 from Neuromatch Academy course materials; this is noted inline where it applies.
