@@ -26,7 +26,8 @@ against the `openalyx.internationalbrainlab.org` database.
 
 - 140 subjects across 7 labs
 
-Data are released openly by the International Brain Laboratory.
+Data are released openly by the International Brain Laboratory. These analyses were run in July 2026.
+Some subject level aggregate tables available then are no longer served.
 
 ## Methods
 
@@ -45,8 +46,6 @@ conflated:
 - `signed_contrast_right` — current sensory evidence
 - `previous_choice_signed` — choice persistence
 - `win_stay_lose_switch` — reward-dependent updating
-
-Standard errors clustered by [subject / session] to account for repeated measures.
 
 **Statistics.** Pearson and Spearman correlations reported together throughout, since several
 relationships are monotonic but not linear. Paired Wilcoxon signed-rank test for the
@@ -95,18 +94,15 @@ The first run downloads aggregate tables for every subject from IBL's S3 store, 
 [N] minutes. The assembled dataframe is then cached to `data/all_trials_cached.parquet`;
 subsequent runs load from cache.
 
-### Known issue: missing aggregate tables
+### Known issue: aggregation cell will fail
+**This is unresolved and the notebook will not currently run end to end.**
 
 Some subjects are missing one or more of the three aggregate tables
-(`_ibl_subjectTrials`, `_ibl_subjectSessions`, `_ibl_subjectTraining`). For example,
-`CSHL_001` has a trials table but no sessions table.
-
-The aggregation loop catches these, skips the affected subject and records it. The list of
-skipped subjects is printed at the end of the loop and stored in `skipped_subjects.csv`, so
-the excluded sample is explicit rather than silent.
-
-ONE API version pinned in `requirements.txt`, since dataset availability on the remote store
-changes over time.
+(`_ibl_subjectTrials`, `_ibl_subjectSessions`, `_ibl_subjectTraining`) on IBL's remote store.
+`CSHL_001`, for example, has a trials table but no sessions table. These files were available
+in July 2026 when the analysis was run and have since been withdrawn or reorganised, which is
+why the results here were reproducible at the time but are not from a clean cache today. The
+same failure occurs in Neuromatch provided IBL's own public example notebook.
 
 ## Repository structure
 
