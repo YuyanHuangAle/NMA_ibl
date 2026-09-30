@@ -19,7 +19,7 @@ This repository asks three things of the publicly released behavioural data:
 3. **How much does a mouse's previous choice influence its current one**, relative to the
    sensory evidence actually available on that trial?
 
-**### Known issue: aggregation cell will fail**
+**Important Known issue: aggregation cell will fail**
 **This is unresolved and the notebook will not currently run end to end.**
 
 Some subjects are missing one or more of the three aggregate tables
