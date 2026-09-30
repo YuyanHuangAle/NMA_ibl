@@ -1,8 +1,7 @@
 # Learning and choice history in the IBL mouse decision-making dataset
 
-Analysis of training behaviour in the International Brain Laboratory (IBL) standardised
-decision-making task, asking how reward, choice history and sensory evidence shape learning
-and trial-by-trial choices.
+Analysis of International Brain Laboratory (IBL) standardised decision-making task, 
+asking how reward, choice history and sensory evidence shape learning and trial-by-trial choices.
 
 Work completed during the Neuromatch Academy Computational Neuroscience course (July 2026)
 and posted afterwards(September 2026).
@@ -25,11 +24,9 @@ This repository asks three things of the publicly released behavioural data:
 Public IBL behavioural data, accessed via the [ONE API](https://int-brain-lab.github.io/ONE/)
 against the `openalyx.internationalbrainlab.org` database.
 
-- 140 subjects across [N] labs
-- [N] training sessions
-- 418,082 trials in the GLM analysis
+- 140 subjects across 7 labs
 
-Data are released openly by the International Brain Laboratory. See **Attribution** below.
+Data are released openly by the International Brain Laboratory.
 
 ## Methods
 
@@ -70,8 +67,6 @@ win-stay / lose-stay comparison.
 Current sensory evidence remains the strongest single predictor of choice, but previous-choice
 persistence is substantial and independently significant. Mice tended to repeat their previous
 choice after both rewarded and error trials during early training.
-
-Figures: [`results/NMA_analysis.pdf`](results/)
 
 ## Limitations
 
@@ -139,10 +134,10 @@ from Neuromatch Academy course materials; this is noted inline where it applies.
 All code, analyses and figures in this repository are my own.
 
 This work was carried out during a five-person Neuromatch Academy group project on the IBL
-decision-making dataset. The wider project also covered [within-session reward-rate effects
-on response vigor and arousal / pupillometry analyses], which were led by other team members
+decision-making dataset. The wider project also covered within-session reward-rate effects
+on response vigor and arousal / pupillometry analyses, which were led by other team members
 and are not included here. This repository contains only my own contributions.
 
 ## Author
 
-Yuyan Huang (Alethea) — [link] · MSc Neuroscience, UCL
+Yuyan Huang (Alethea)
